@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} | Get Assured Inc.</title>
+    <meta name="description" content="{{ description or 'Get Assured Inc. is an independent insurance agency in Burbank and Southern California offering health, life, auto, home, and business insurance guidance.' }}" />
+    <link rel="canonical" href="{{ siteUrl }}{{ page.url }}" />
+    <meta property="og:site_name" content="Get Assured Inc." />
+    <meta property="og:title" content="{{ title }} | Get Assured Inc." />
+    <meta property="og:description" content="{{ description or 'Independent insurance agency serving Burbank and Southern California. Get Assured Inc. — health, life, auto, home, and business insurance.' }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ siteUrl }}{{ page.url }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ title }} | Get Assured Inc." />
+    <meta name="twitter:description" content="{{ description or 'Independent insurance agency serving Burbank and Southern California. Get Assured Inc. — health, life, auto, home, and business insurance.' }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "InsuranceAgency",
+        "name": "Get Assured Inc.",
+        "url": "{{ siteUrl }}/",
+        "telephone": "+18185633332",
+        "faxNumber": "+18188489933",
+        "email": "info@getassured.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1815 N Lincoln St",
+          "addressLocality": "Burbank",
+          "addressRegion": "CA",
+          "postalCode": "91506",
+          "addressCountry": "US"
+        },
+        "areaServed": ["Burbank", "San Fernando Valley", "Southern California"]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a href="{{ '/' | url }}" class="nav__logo" aria-label="Get Assured Inc. home">
+          <img class="nav__logo-img" src="{{ '/images/logo.png' | url }}" alt="Get Assured Inc.">
+        </a>
+        <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-links" class="nav__links">
+          <li><a href="{{ '/apply-now/' | url }}">Apply Now</a></li>
+          <li><a href="{{ '/inquire-now/' | url }}">Inquire Now</a></li>
+          <li><a href="{{ '/resources/' | url }}">Resources</a></li>
+          <li><a href="{{ '/about_us/' | url }}">About Us</a></li>
+          <li><a href="{{ '/agents/' | url }}">Agents</a></li>
+          <li><a href="{{ '/contact_us/' | url }}">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <section>
+          <img class="footer__logo" src="{{ '/images/logo.png' | url }}" alt="Get Assured Inc.">
+          <p>Independent insurance guidance for individuals, families, and businesses — rooted in trust, clarity, and local experience.</p>
+          <p class="footer__license">License # NMLS 347589 / CalBRE 01861153</p>
+        </section>
+        <section>
+          <h2 class="footer__title">Contact</h2>
+          <ul class="footer__list">
+            <li>Office: <a href="tel:+18185633332">(818) 563-3332</a></li>
+            <li>Fax: 818 848-9933</li>
+            <li>Email: <a href="mailto:info@getassured.com">info@getassured.com</a></li>
+            <li>1815 N Lincoln St, Burbank CA 91506</li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="footer__title">Pages</h2>
+          <ul class="footer__list">
+            <li><a href="{{ '/apply-now/' | url }}">Apply Now</a></li>
+            <li><a href="{{ '/inquire-now/' | url }}">Inquire Now</a></li>
+            <li><a href="{{ '/resources/' | url }}">Resources</a></li>
+            <li><a href="{{ '/agents/' | url }}">Agents</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="footer__title">Connect</h2>
+          <ul class="footer__list">
+            <li><a href="https://www.facebook.com/GetAssuredInc2022/?ref=pages_you_manage">Facebook</a></li>
+            <li><a href="https://www.instagram.com/getassuredinc2022/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/getassuredinc/">LinkedIn</a></li>
+            <li><a href="https://twitter.com/Get_AssuredInc">X / Twitter</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer__bottom container">
+        <p>&copy; {{ year }} Get Assured Inc. All rights reserved.</p>
+        <p>Equal Housing Opportunity</p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.nav__toggle');
+      const links = document.querySelector('.nav__links');
+
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        links.classList.toggle('is-open');
+      });
+    </script>
+  </body>
+</html>
