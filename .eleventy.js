@@ -3,8 +3,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
 
-  // Current year filter
-  eleventyConfig.addFilter("year", () => new Date().getFullYear());
+  // Current year global data
+  eleventyConfig.addGlobalData("year", () => new Date().getFullYear());
 
   return {
     dir: {

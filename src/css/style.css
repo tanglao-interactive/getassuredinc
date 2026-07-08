@@ -533,7 +533,6 @@ ul { list-style: none; }
   color: var(--color-white);
 }
 
-.why-card__body {}
 .why-card__title {
   font-size: 1rem;
   font-weight: 700;
