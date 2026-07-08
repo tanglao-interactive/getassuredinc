@@ -1,0 +1,25 @@
+{
+  "name": "getassuredinc",
+  "version": "1.0.0",
+  "description": "Get Assured Inc",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanglao-interactive/getassuredinc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tanglao-interactive/getassuredinc/issues"
+  },
+  "homepage": "https://github.com/tanglao-interactive/getassuredinc#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
