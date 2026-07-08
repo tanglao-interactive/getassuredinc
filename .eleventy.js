@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
 
   // Current year global data
   eleventyConfig.addGlobalData("year", () => new Date().getFullYear());
-  eleventyConfig.addGlobalData("siteUrl", "https://getassuredinc.pang-app.com");
+  eleventyConfig.addGlobalData("siteUrl", process.env.SITE_URL || "https://getassuredinc.pang-app.com");
 
   return {
     dir: {
