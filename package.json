@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/tanglao-interactive/getassuredinc/issues"
   },
-  "homepage": "https://github.com/tanglao-interactive/getassuredinc#readme",
+  "homepage": "https://getassuredinc.pang-app.com/",
   "dependencies": {
     "@11ty/eleventy": "^3.1.6"
   }

@@ -121,7 +121,7 @@ img {
 }
 
 .hero--home {
-  --hero-bg: url("/images/backgrounds/home.png");
+  --hero-bg: url("../images/backgrounds/home.png");
 }
 
 .hero__grid,
@@ -371,17 +371,17 @@ h3 {
   background-size: cover;
 }
 
-.page-hero--apply { --page-bg: url("/images/backgrounds/apply-now.png"); }
-.page-hero--inquire { --page-bg: url("/images/backgrounds/inquire-now.png"); }
-.page-hero--resources { --page-bg: url("/images/backgrounds/resources.png"); }
-.page-hero--about { --page-bg: url("/images/backgrounds/about-us.png"); }
-.page-hero--agents { --page-bg: url("/images/backgrounds/agents.png"); }
-.page-hero--contact { --page-bg: url("/images/backgrounds/contact-us.png"); }
-.page-hero--links { --page-bg: url("/images/backgrounds/links.png"); }
-.page-hero--news { --page-bg: url("/images/backgrounds/news.png"); }
-.page-hero--faq { --page-bg: url("/images/backgrounds/faq.png"); }
-.page-hero--blog { --page-bg: url("/images/backgrounds/blog.png"); }
-.page-hero--forms { --page-bg: url("/images/backgrounds/forms.png"); }
+.page-hero--apply { --page-bg: url("../images/backgrounds/apply-now.png"); }
+.page-hero--inquire { --page-bg: url("../images/backgrounds/inquire-now.png"); }
+.page-hero--resources { --page-bg: url("../images/backgrounds/resources.png"); }
+.page-hero--about { --page-bg: url("../images/backgrounds/about-us.png"); }
+.page-hero--agents { --page-bg: url("../images/backgrounds/agents.png"); }
+.page-hero--contact { --page-bg: url("../images/backgrounds/contact-us.png"); }
+.page-hero--links { --page-bg: url("../images/backgrounds/links.png"); }
+.page-hero--news { --page-bg: url("../images/backgrounds/news.png"); }
+.page-hero--faq { --page-bg: url("../images/backgrounds/faq.png"); }
+.page-hero--blog { --page-bg: url("../images/backgrounds/blog.png"); }
+.page-hero--forms { --page-bg: url("../images/backgrounds/forms.png"); }
 
 .page-hero h1 {
   font-size: clamp(2.7rem, 7vw, 4.8rem);

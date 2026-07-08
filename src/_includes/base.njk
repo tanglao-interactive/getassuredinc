@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -43,19 +43,19 @@
   <body>
     <header class="site-header">
       <nav class="nav container" aria-label="Primary navigation">
-        <a href="/" class="nav__logo" aria-label="Get Assured Inc. home">
-          <img class="nav__logo-img" src="/images/logo.png" alt="Get Assured Inc.">
+        <a href="{{ '/' | url }}" class="nav__logo" aria-label="Get Assured Inc. home">
+          <img class="nav__logo-img" src="{{ '/images/logo.png' | url }}" alt="Get Assured Inc.">
         </a>
         <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
         <ul class="nav__links">
-          <li><a href="/apply-now/">Apply Now</a></li>
-          <li><a href="/inquire-now/">Inquire Now</a></li>
-          <li><a href="/resources/">Resources</a></li>
-          <li><a href="/about_us/">About Us</a></li>
-          <li><a href="/agents/">Agents</a></li>
-          <li><a href="/contact_us/">Contact Us</a></li>
+          <li><a href="{{ '/apply-now/' | url }}">Apply Now</a></li>
+          <li><a href="{{ '/inquire-now/' | url }}">Inquire Now</a></li>
+          <li><a href="{{ '/resources/' | url }}">Resources</a></li>
+          <li><a href="{{ '/about_us/' | url }}">About Us</a></li>
+          <li><a href="{{ '/agents/' | url }}">Agents</a></li>
+          <li><a href="{{ '/contact_us/' | url }}">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -67,7 +67,7 @@
     <footer class="site-footer">
       <div class="container footer__grid">
         <section>
-          <img class="footer__logo" src="/images/logo.png" alt="Get Assured Inc.">
+          <img class="footer__logo" src="{{ '/images/logo.png' | url }}" alt="Get Assured Inc.">
           <p>Home ownership made easy for you with mortgage and real estate guidance rooted in trust, clarity, and local experience.</p>
           <p class="footer__license">License # NMLS 347589 / CalBRE 01861153</p>
         </section>
@@ -83,10 +83,10 @@
         <section>
           <h2 class="footer__title">Pages</h2>
           <ul class="footer__list">
-            <li><a href="/apply-now/">Apply Now</a></li>
-            <li><a href="/inquire-now/">Inquire Now</a></li>
-            <li><a href="/resources/">Resources</a></li>
-            <li><a href="/agents/">Agents</a></li>
+            <li><a href="{{ '/apply-now/' | url }}">Apply Now</a></li>
+            <li><a href="{{ '/inquire-now/' | url }}">Inquire Now</a></li>
+            <li><a href="{{ '/resources/' | url }}">Resources</a></li>
+            <li><a href="{{ '/agents/' | url }}">Agents</a></li>
           </ul>
         </section>
         <section>
