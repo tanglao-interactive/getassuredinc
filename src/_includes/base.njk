@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }} | Get Assured Inc.</title>
     <meta name="description" content="{{ description or 'Get Assured Inc. helps Burbank and Southern California buyers, sellers, and homeowners with mortgage and real estate guidance.' }}" />
-    <link rel="canonical" href="https://getassuredinc.com{{ page.url }}" />
+    <link rel="canonical" href="{{ siteUrl }}{{ page.url }}" />
     <meta property="og:site_name" content="Get Assured Inc." />
     <meta property="og:title" content="{{ title }} | Get Assured Inc." />
     <meta property="og:description" content="{{ description or 'Mortgage and real estate guidance from Get Assured Inc. in Burbank, California.' }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://getassuredinc.com{{ page.url }}" />
+    <meta property="og:url" content="{{ siteUrl }}{{ page.url }}" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{{ title }} | Get Assured Inc." />
     <meta name="twitter:description" content="{{ description or 'Mortgage and real estate guidance from Get Assured Inc. in Burbank, California.' }}" />
@@ -23,7 +23,7 @@
         "@context": "https://schema.org",
         "@type": "RealEstateAgent",
         "name": "Get Assured Inc.",
-        "url": "https://getassuredinc.com/",
+        "url": "{{ siteUrl }}/",
         "telephone": "+18185633332",
         "faxNumber": "+18188489933",
         "email": "info@getassured.com",
