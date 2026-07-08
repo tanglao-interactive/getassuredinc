@@ -449,10 +449,16 @@ textarea:focus {
   border: 4px solid rgba(124, 22, 26, .16);
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: var(--photo-x, center) var(--photo-y, 24%);
   background: var(--color-warm);
   box-shadow: 0 10px 24px rgba(79, 41, 34, .14);
 }
+
+.agent-card__photo--romeo { --photo-y: 20%; }
+.agent-card__photo--henry { --photo-y: 20%; }
+.agent-card__photo--menardo { --photo-y: 16%; }
+.agent-card__photo--francis { --photo-y: 18%; }
+.agent-card__photo--ray { --photo-y: 34%; }
 
 .agent-card h2 {
   margin-bottom: 8px;
