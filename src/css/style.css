@@ -123,9 +123,15 @@ img {
   display: grid;
   align-items: center;
   background:
-    linear-gradient(90deg, rgba(255, 250, 247, .94), rgba(255, 250, 247, .76)),
-    linear-gradient(135deg, #f6efec 0%, #d8b7ad 42%, #96695e 100%);
+    linear-gradient(90deg, rgba(255, 250, 247, .98) 0%, rgba(255, 250, 247, .9) 44%, rgba(255, 250, 247, .34) 76%, rgba(255, 250, 247, .16) 100%),
+    var(--hero-bg, linear-gradient(135deg, #f6efec 0%, #d8b7ad 42%, #96695e 100%));
+  background-position: center;
+  background-size: cover;
   padding: 96px 0 72px;
+}
+
+.hero--home {
+  --hero-bg: url("/images/backgrounds/home.png");
 }
 
 .hero__grid,
@@ -369,9 +375,23 @@ h3 {
 .page-hero {
   padding: 150px 0 72px;
   background:
-    linear-gradient(90deg, rgba(255, 250, 247, .95), rgba(255, 250, 247, .8)),
-    linear-gradient(135deg, #f6efec, #d1a79b);
+    linear-gradient(90deg, rgba(255, 250, 247, .98) 0%, rgba(255, 250, 247, .92) 46%, rgba(255, 250, 247, .38) 76%, rgba(255, 250, 247, .18) 100%),
+    var(--page-bg, linear-gradient(135deg, #f6efec, #d1a79b));
+  background-position: center;
+  background-size: cover;
 }
+
+.page-hero--apply { --page-bg: url("/images/backgrounds/apply-now.png"); }
+.page-hero--inquire { --page-bg: url("/images/backgrounds/inquire-now.png"); }
+.page-hero--resources { --page-bg: url("/images/backgrounds/resources.png"); }
+.page-hero--about { --page-bg: url("/images/backgrounds/about-us.png"); }
+.page-hero--agents { --page-bg: url("/images/backgrounds/agents.png"); }
+.page-hero--contact { --page-bg: url("/images/backgrounds/contact-us.png"); }
+.page-hero--links { --page-bg: url("/images/backgrounds/links.png"); }
+.page-hero--news { --page-bg: url("/images/backgrounds/news.png"); }
+.page-hero--faq { --page-bg: url("/images/backgrounds/faq.png"); }
+.page-hero--blog { --page-bg: url("/images/backgrounds/blog.png"); }
+.page-hero--forms { --page-bg: url("/images/backgrounds/forms.png"); }
 
 .page-hero h1 {
   font-size: clamp(2.7rem, 7vw, 4.8rem);
@@ -554,6 +574,19 @@ textarea:focus {
   .hero {
     min-height: auto;
     padding: 72px 0 54px;
+    background:
+      linear-gradient(180deg, rgba(255, 250, 247, .98) 0%, rgba(255, 250, 247, .92) 58%, rgba(255, 250, 247, .62) 100%),
+      var(--hero-bg, linear-gradient(135deg, #f6efec 0%, #d8b7ad 42%, #96695e 100%));
+    background-position: center;
+    background-size: cover;
+  }
+
+  .page-hero {
+    background:
+      linear-gradient(180deg, rgba(255, 250, 247, .98) 0%, rgba(255, 250, 247, .92) 58%, rgba(255, 250, 247, .62) 100%),
+      var(--page-bg, linear-gradient(135deg, #f6efec, #d1a79b));
+    background-position: center;
+    background-size: cover;
   }
 
   .hero__panel,
