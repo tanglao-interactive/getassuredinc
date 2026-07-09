@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }} | Get Assured Inc.</title>
-    <meta name="description" content="{{ description or 'Get Assured Inc. is an independent insurance agency in Burbank and Southern California offering health, life, auto, home, and business insurance guidance.' }}" />
+    <meta name="description" content="{{ description or 'Get Assured Inc. helps Burbank and Southern California buyers, sellers, and homeowners with mortgage and real estate guidance.' }}" />
     <link rel="canonical" href="{{ siteUrl }}{{ page.url }}" />
     <meta property="og:site_name" content="Get Assured Inc." />
     <meta property="og:title" content="{{ title }} | Get Assured Inc." />
-    <meta property="og:description" content="{{ description or 'Independent insurance agency serving Burbank and Southern California. Get Assured Inc. — health, life, auto, home, and business insurance.' }}" />
+    <meta property="og:description" content="{{ description or 'Mortgage and real estate guidance from Get Assured Inc. in Burbank, California.' }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ siteUrl }}{{ page.url }}" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{{ title }} | Get Assured Inc." />
-    <meta name="twitter:description" content="{{ description or 'Independent insurance agency serving Burbank and Southern California. Get Assured Inc. — health, life, auto, home, and business insurance.' }}" />
+    <meta name="twitter:description" content="{{ description or 'Mortgage and real estate guidance from Get Assured Inc. in Burbank, California.' }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,7 +21,7 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "InsuranceAgency",
+        "@type": "RealEstateAgent",
         "name": "Get Assured Inc.",
         "url": "{{ siteUrl }}/",
         "telephone": "+18185633332",
@@ -35,7 +35,8 @@
           "postalCode": "91506",
           "addressCountry": "US"
         },
-        "areaServed": ["Burbank", "San Fernando Valley", "Southern California"]
+        "areaServed": ["Burbank", "San Fernando Valley", "Southern California"],
+        "identifier": ["NMLS 347589", "CalBRE 01861153"]
       }
     </script>
   </head>
@@ -67,7 +68,7 @@
       <div class="container footer__grid">
         <section>
           <img class="footer__logo" src="{{ '/images/logo.png' | url }}" alt="Get Assured Inc.">
-          <p>Independent insurance guidance for individuals, families, and businesses — rooted in trust, clarity, and local experience.</p>
+          <p>Home ownership made easy for you with mortgage and real estate guidance rooted in trust, clarity, and local experience.</p>
           <p class="footer__license">License # NMLS 347589 / CalBRE 01861153</p>
         </section>
         <section>
